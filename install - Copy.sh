@@ -63,7 +63,7 @@ echo
 # Read HAT EEPROMs to /etc/mcc/hats
 echo "Reading DAQ HAT EEPROMs"
 echo
-daqhats_read_eeproms_copy
+daqhats_read_eeproms
 
 echo
 

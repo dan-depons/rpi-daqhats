@@ -23,10 +23,10 @@ fi
 
 if [ -e "/dev/i2c-0" ]; then
    BUS=0
-elif [ -e "/dev/i2c-3" ]; then
-   BUS=3
+elif [ -e "/dev/i2c-1" ]; then
+   BUS=1
 else
-   dtoverlay i2c-gpio i2c_gpio_sda=0 i2c_gpio_scl=1 bus=3 > /dev/null 2>&1
+   dtoverlay i2c-gpio i2c_gpio_sda=0 i2c_gpio_scl=1 bus=1 > /dev/null 2>&1
    rc=$?
    if [ $rc != 0 ]; then
       dtoverlay i2c-gpio i2c_gpio_sda=0 i2c_gpio_scl=1
@@ -44,10 +44,10 @@ else
    done
    overlay_loaded=1
 
-   if [ -e "/dev/i2c-3" ]; then
-      BUS=3
+   if [ -e "/dev/i2c-1" ]; then
+      BUS=1
    else
-      echo "Expected I2C bus (i2c-3) not found."
+      echo "Expected I2C bus (i2c-1) not found."
       exit 1
    fi
 fi
@@ -62,7 +62,7 @@ if [ "$rc" != 0 ]; then
    exit $rc
 fi
 
-SYS=/sys/class/i2c-adapter/i2c-$BUS
+SYS=/sys/class/i2c-dev/i2c-$BUS
 
 rm -f /etc/mcc/hats/*.bin
 
