@@ -62,7 +62,7 @@ if [ "$rc" != 0 ]; then
    exit $rc
 fi
 
-SYS=/sys/class/i2c-adapter/i2c-$BUS
+SYS=/sys/class/i2c-dev/i2c-$BUS/device
 
 rm -f /etc/mcc/hats/*.bin
 
