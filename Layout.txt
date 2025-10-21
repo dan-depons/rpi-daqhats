@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------- |
+| Reset Config  Reset Temps  Output Off |            Start Stop Restart Exit |
+|--------------------------------------------------------------------------- |
+| Configuration | Live Plot |                                                |
+|--------------------------------------------------------------------------- |
+| Setup Configuration    | TC Ch Names | Voltage Ch Names | Current Ch Names |
+| Test Name              | Ch 0        | Ch 0             | Ch 0             |
+| Test Location          | Ch 1        | Ch 1             | Ch 1             |
+| Test Date              | Ch 2        | Ch 2             | Ch 2             |
+| Additional Comments    | Ch 3        | Ch 3             | Ch 3             |
+| File Name              | Ch 4        | Ch 4             | Ch 4             |
+| Sample Rate (TC)       | Ch 5        | Ch 5             | Ch 5             |
+| Sample Rate (ADC)      | Ch 6        | Ch 6             | Ch 6             |
+| PWM GPIO Pin           | Ch 7        | Ch 7             | Ch 7             |
+| Max Temp               | ------------------------------------------------- | 
+| Alarm Temp             |                                                   |
+| Warning Temp           |                                                   |
+| TC Type                |                                                   |
+| TC Channels            |                                                   |
+| ADC (V) Channels       |                                                   |
+| ADC (A) Channels       |                                                   |
+| GPIO Channels          |                                                   |
+| Vout Channels          |                                                   |
+| ---------------------- |                                                   |
+| Ramp Configuration     |                                                   |
+| Start Buffer (s)       |                                                   |
+| Plateau 1 Duration (s) |                                                   |
+| Ramp 1 Durations (s)   |                                                   |
+| Ramp 1 End Duty Cycle  |                                                   |
+| Plateau 2 Duration (s) |                                                   |
+| Ramp 2 Duration (s)    |                                                   |
+| Ramp 2 End Duty Cycle  |                                                   |
+| Plateau 3 Duration (s) |                                                   |
+| End Buffer Time (s)    |                                                   |
+| -------------------------------------------------------------------------- |
